@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{482EA7E2-D81E-4896-B6D2-CC5B39FF06B2}</ProjectGuid>
+    <ProjectGuid>{9C3B0E4F-363A-44CC-833C-3021A93FBF8F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>Builder</RootNamespace>
+    <AssemblyName>Builder</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,19 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\Client.cs" />
-    <Compile Include="Factory\DomesticKithenFactory.cs" />
-    <Compile Include="Products\MainCourse\Gulas.cs" />
+    <Compile Include="Builder\CateringTeamItaliano.cs" />
+    <Compile Include="Builder\CateringTeamTradition.cs" />
+    <Compile Include="Director\Client.cs" />
+    <Compile Include="Products\MainCourse\GulasMainCourse.cs" />
+    <Compile Include="Builder\ICateringTeam.cs" />
     <Compile Include="Products\Dessert\IDessert.cs" />
-    <Compile Include="Factory\IKithenFactory.cs" />
     <Compile Include="Products\MainCourse\IMainCourse.cs" />
-    <Compile Include="Products\Menu.cs" />
     <Compile Include="Products\Starter\IStarter.cs" />
-    <Compile Include="Factory\ItalianKithenFactory.cs" />
+    <Compile Include="Products\Menu.cs" />
     <Compile Include="Products\MainCourse\PastaMainCourse.cs" />
     <Compile Include="Products\Dessert\PrincessDonutsDessert.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Products\Starter\ProjaraStarter.cs" />
+    <Compile Include="Products\Starter\ProjaricaStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Products\Starter\ShrimpStarter.cs" />
     <Compile Include="Products\Dessert\TiramisuDessert.cs" />

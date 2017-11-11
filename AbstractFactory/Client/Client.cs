@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbstractFactory.Products;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,20 +10,21 @@ namespace AbstractFactory
     public class Client
     {
         private IKithenFactory _cateringTeamFactory;
+        private Menu menu;
 
         public Client(IKithenFactory ct)
         {
             _cateringTeamFactory = ct;
         }
 
-        public string KreirajMeni()
+        public string CreateMenu()
         {
             IStarter starter = _cateringTeamFactory.GetStarter();
             IMainCourse mainCourse = _cateringTeamFactory.GetMainCourse();
             IDessert dessert = _cateringTeamFactory.GetDessert();
 
-            return "MENU\n______________________________________\n" + starter.DishInfo +
-                "\n" + mainCourse.DishInfo + "\n" + dessert.DishInfo + "\n\n";
+            menu = new Menu(starter, mainCourse, dessert);
+            return menu.GetMenu();
         }
     }
 }

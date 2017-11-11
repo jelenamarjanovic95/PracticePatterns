@@ -17,8 +17,8 @@ namespace AbstractFactory
             Client c1 = new Client(italianFactory);
             Client c2 = new Client(domesticFactory);
 
-            Console.WriteLine("***First client*** \n\n" + c1.KreirajMeni());
-            Console.WriteLine("***Second client*** \n\n" + c2.KreirajMeni());
+            Console.WriteLine("***First client*** \n\n" + c1.CreateMenu());
+            Console.WriteLine("***Second client*** \n\n" + c2.CreateMenu());
         }
     }
 }
