@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder
+namespace FactoryMethod
 {
-    public interface IMainCourse
+    public interface IMenu
     {
-        string GetMainCourse();
+        string GetMenuInfo();
     }
 }

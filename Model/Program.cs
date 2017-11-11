@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder
+namespace Model
 {
-    public interface IDessert
+    class Program
     {
-        string GetDessert();
+        static void Main(string[] args)
+        {
+        }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{482EA7E2-D81E-4896-B6D2-CC5B39FF06B2}</ProjectGuid>
+    <ProjectGuid>{3BE89216-0CAA-4BDE-93DC-D04CFF9448A7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,21 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\Client.cs" />
-    <Compile Include="Factory\DomesticKithenFactory.cs" />
-    <Compile Include="Factory\IKithenFactory.cs" />
-    <Compile Include="Factory\ItalianKithenFactory.cs" />
+    <Compile Include="Products\Dessert\IDessert.cs" />
+    <Compile Include="Products\Dessert\PrincessDonutsDessert.cs" />
+    <Compile Include="Products\Dessert\TiramisuDessert.cs" />
+    <Compile Include="Products\MainCourse\Gulas.cs" />
+    <Compile Include="Products\MainCourse\IMainCourse.cs" />
+    <Compile Include="Products\MainCourse\PastaMainCourse.cs" />
+    <Compile Include="Products\Menu.cs" />
+    <Compile Include="Products\Starter\IStarter.cs" />
+    <Compile Include="Products\Starter\ProjaraStarter.cs" />
+    <Compile Include="Products\Starter\ShrimpStarter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{3be89216-0caa-4bde-93dc-d04cff9448a7}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,22 +45,18 @@
     <Compile Include="Builder\CateringTeamItaliano.cs" />
     <Compile Include="Builder\CateringTeamTradition.cs" />
     <Compile Include="Director\Client.cs" />
-    <Compile Include="Products\MainCourse\GulasMainCourse.cs" />
     <Compile Include="Builder\ICateringTeam.cs" />
-    <Compile Include="Products\Dessert\IDessert.cs" />
-    <Compile Include="Products\MainCourse\IMainCourse.cs" />
-    <Compile Include="Products\Starter\IStarter.cs" />
-    <Compile Include="Products\Menu.cs" />
-    <Compile Include="Products\MainCourse\PastaMainCourse.cs" />
-    <Compile Include="Products\Dessert\PrincessDonutsDessert.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Products\Starter\ProjaricaStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Products\Starter\ShrimpStarter.cs" />
-    <Compile Include="Products\Dessert\TiramisuDessert.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3be89216-0caa-4bde-93dc-d04cff9448a7}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
