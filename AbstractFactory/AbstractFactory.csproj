@@ -42,8 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\Client.cs" />
+    <Compile Include="Factory\DomesticKithenFactory.cs" />
+    <Compile Include="Products\Gulas.cs" />
+    <Compile Include="Products\IDessert.cs" />
+    <Compile Include="Factory\IKithenFactory.cs" />
+    <Compile Include="Products\IMainCourse.cs" />
+    <Compile Include="Products\IStarter.cs" />
+    <Compile Include="Factory\ItalianKithenFactory.cs" />
+    <Compile Include="Products\PastaMainCourse.cs" />
+    <Compile Include="Products\PrincessDonutsDessert.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Products\ProjaraStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Products\ShrimpStarter.cs" />
+    <Compile Include="Products\TiramisuDessert.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
